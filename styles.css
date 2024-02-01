@@ -149,7 +149,7 @@ form {
     margin-bottom: 2rem;
 }
 
-button {
+.submit-button {
     margin-left: 2rem;
 
     background-color: #374C70;
@@ -161,9 +161,10 @@ button {
     box-shadow: 3px 3px 11px 0px rgba(159, 159, 159, 1);
 
     transition: background-color 0.3s;
+    align-self: start;
 }
 
-button:hover {
+.submit-button:hover {
     background-color: #7B92B5;
     cursor: pointer;
 }
@@ -176,6 +177,10 @@ p > a > strong {
 p > a > strong:hover {
     color: #7B92B5;
     cursor: pointer;
+}
+
+#signup-heading {
+    margin-bottom: 2rem;
 }
 
 label {

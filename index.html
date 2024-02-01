@@ -10,65 +10,57 @@
 
 <body>
     <div class="form-card">
-        <div class="form-background">
-            <h1>Onward Booking</h1>
-        </div>
+        <div class="form-background"></div>
         <div class="form-content">
             <p>This is some text that talks about the service. It's going to go on for a bit, in order to take up space
                 on the screen. Isn't that just great?</p>
-            <p><strong>Let's get you signed up!</strong></p>
-            <div class="form-inner-card">
-                <p><strong>Please fill out the forms below</strong></p>
-                <form>
-                    <div class="form-row">
-                        <div>
-                            <label for="fname">First Name</label>
-                            <br>
-                            <input type="text" if="fname" name="fname">
+            <p id="signup-heading"><strong>Let's get you signed up!</strong></p>
+                <form id="signup-form">
+                    <div class="form-inner-card">
+                        <p><strong>Please fill out the forms below</strong></p>
+                        <div class="form-row">
+                            <div>
+                                <label for="fname">First Name</label>
+                                <br>
+                                <input type="text" if="fname" name="fname" required>
+                            </div>
+                            <div>
+                                <label for="lname">Last Name</label>
+                                <br>
+                                <input type="text" if="lname" name="lname" required>
+                            </div>
                         </div>
-                        <div>
-                            <label for="lname">Last Name</label>
-                            <br>
-                            <input type="text" if="lname" name="lname">
+                        <div class="form-row">
+                            <div>
+                                <label for="email">Email</label>
+                                <br>
+                                <input type="email" if="email" name="email" required>
+                            </div>
+                            <div>
+                                <label for="phone">Phone Number</label>
+                                <br>
+                                <input type="text" if="phone" name="phone" required>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-row">
-                        <div>
-
-                            <label for="email">Email</label>
-                            <br>
-                            <input type="email" if="email" name="email">
-                        </div>
-                        <div>
-
-                            <label for="phone">Phone Number</label>
-
-                            <br>
-                            <input type="text" if="phone" name="phone">
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div>
-
-                            <label for="password">Password</label>
-
-                            <br>
-                            <input type="password" if="password" name="password">
-                        </div>
-                        <div>
-
-                            <label for="confirmpass">Confirm Password</label>
-
-                            <br>
-                            <input type="password" if="confirmpass" name="confirmpass">
+                        <div class="form-row">
+                            <div>
+                                <label for="password">Password</label>
+                                <br>
+                                <input type="password" if="password" name="password" id="password" required>
+                            </div>
+                            <div>
+                                <label for="confirmpass">Confirm Password</label>
+                                <br>
+                                <input type="password" if="confirmpass" name="confirmpass" id="confirmpass" required>
+                            </div>
                         </div>
                     </div>
+                    <input type="submit" value="Create Account" class="submit-button">
                 </form>
-            </div>
-            <button>Create Account</button>
             <p>Already have an account? <a><strong>Log in</strong></a></p>
         </div>
     </div>
+    <script src="index.js"></script>
 </body>
 
 </html>

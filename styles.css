@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap');
+
 /* Box sizing rules */
 *,
 *::before,
@@ -26,8 +29,9 @@ ol[role='list'] {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
-  line-height: 1.5;
+    margin: 0;
+    min-height: 100vh;
+    line-height: 1.5;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -69,4 +73,115 @@ textarea:not([rows]) {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
+}
+
+* {
+    font-family: Inter, Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #242424;
+    display: flex;
+    justify-content: center;
+}
+
+.form-card {
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+    width: 1200px;
+
+    overflow: hidden;
+}
+
+.form-background {
+    background-image: url(./clouds.jpg);
+    background-size: cover;
+    
+    flex: 2;
+}
+
+.form-background > h1 {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(36, 36, 36, 0.5);
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 9.3rem;
+    font-family: 'Playfair Display', 'Times New Roman', Times, serif;
+}
+
+.form-content {
+    flex: 3;
+    background-color: #f0f0f0;
+    padding-top: 8rem;
+}
+
+.form-content > p {
+    color: black;
+    margin-left: 2rem;
+    max-width: 32rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-row > :first-child {
+    margin-right: 2rem;
+}
+
+.form-inner-card {
+    background-color: white;
+    padding: 0rem 2rem 2rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 3px 3px 11px 0px rgba(208, 208, 208, 1);
+}
+
+.form-inner-card > p {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+button {
+    margin-left: 2rem;
+
+    background-color: #374C70;
+    color: white;
+
+    padding: 0.8rem 2.4rem;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 3px 3px 11px 0px rgba(159, 159, 159, 1);
+
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #7B92B5;
+    cursor: pointer;
+}
+
+p > a > strong {
+    color: #374C70;
+    transition: color 0.2s;
+}
+
+p > a > strong:hover {
+    color: #7B92B5;
+    cursor: pointer;
+}
+
+label {
+    margin-bottom: .25rem;
+}
+
+input {
+    margin-bottom: 1rem;
 }

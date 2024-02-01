@@ -1,12 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
-   <h1>hello</h1> 
+    <div class="form-card">
+        <div class="form-background">
+            <h1>Onward Booking</h1>
+        </div>
+        <div class="form-content">
+            <p>This is some text that talks about the service. It's going to go on for a bit, in order to take up space
+                on the screen. Isn't that just great?</p>
+            <p><strong>Let's get you signed up!</strong></p>
+            <div class="form-inner-card">
+                <p><strong>Please fill out the forms below</strong></p>
+                <form>
+                    <div class="form-row">
+                        <div>
+                            <label for="fname">First Name</label>
+                            <br>
+                            <input type="text" if="fname" name="fname">
+                        </div>
+                        <div>
+                            <label for="lname">Last Name</label>
+                            <br>
+                            <input type="text" if="lname" name="lname">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div>
+
+                            <label for="email">Email</label>
+                            <br>
+                            <input type="email" if="email" name="email">
+                        </div>
+                        <div>
+
+                            <label for="phone">Phone Number</label>
+
+                            <br>
+                            <input type="text" if="phone" name="phone">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div>
+
+                            <label for="password">Password</label>
+
+                            <br>
+                            <input type="password" if="password" name="password">
+                        </div>
+                        <div>
+
+                            <label for="confirmpass">Confirm Password</label>
+
+                            <br>
+                            <input type="password" if="confirmpass" name="confirmpass">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <button>Create Account</button>
+            <p>Already have an account? <a><strong>Log in</strong></a></p>
+        </div>
+    </div>
 </body>
+
 </html>
